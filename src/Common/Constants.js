@@ -2,6 +2,8 @@ export const URL = {
     HOME: '/',
     TV: '/tv',
     SEARCH: '/search',
+    MOVIE: '/movie',
+    SHOW: '/show'
 }
  
 export const APIURL = {
