@@ -39,7 +39,7 @@ export default class extends React.Component {
                 // result = request.data;
                 ({
                     data: result
-                } = await movieApi.movieDetail(parsedId))
+                } = await movieApi.movieDetail(parsedId)) // when not available const {} = ...
             } else {
                 // const request = await tvApi.showDetail(parsedId);
                 // result = request.data;
@@ -63,7 +63,6 @@ export default class extends React.Component {
 
     render() {
         const { result, error, loading } = this.state;
-        console.log(result);
         return (
             <DetailPresenter
                 result={result}
