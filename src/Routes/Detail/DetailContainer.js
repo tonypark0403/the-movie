@@ -35,11 +35,17 @@ export default class extends React.Component {
         let result = null;
         try {
             if(isMovie) {
-                const request = await movieApi.movieDetail(parsedId);
-                result = request.data;
+                // const request = await movieApi.movieDetail(parsedId);
+                // result = request.data;
+                ({
+                    data: result
+                } = await movieApi.movieDetail(parsedId))
             } else {
-                const request = await tvApi.showDetail(parsedId);
-                result = request.data;
+                // const request = await tvApi.showDetail(parsedId);
+                // result = request.data;
+                ({
+                    data: result
+                } = await tvApi.showDetail(parsedId))
             }
             // console.log(result);
         } catch {
@@ -57,6 +63,7 @@ export default class extends React.Component {
 
     render() {
         const { result, error, loading } = this.state;
+        console.log(result);
         return (
             <DetailPresenter
                 result={result}
