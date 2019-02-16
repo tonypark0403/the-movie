@@ -35,6 +35,7 @@ export default class extends React.Component {
             loading: true
         })
         try {
+            // throw Error(); // to test error
             const {
                 data: { results: movieResults }
              } = await movieApi.search(searchTerm);
