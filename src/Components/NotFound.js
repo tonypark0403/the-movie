@@ -12,7 +12,6 @@ const Text = styled.span `
     color: #95a5a6;
 `;
 
-// This is almost the same as Error.js so make common with props color and text => Message
 const NotFound = ({ text }) => (
     < Container >
         <Text>{text}</Text>

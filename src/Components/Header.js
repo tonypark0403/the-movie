@@ -1,5 +1,4 @@
 import React from 'react';
-// withRouter : wrap's another component, giving the infor of router
 import { Link, withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import { URL } from 'Common/Constants'
@@ -26,25 +25,19 @@ const Item = styled.li`
     width: 80px;
     height: 50px;
     text-align: center;
-    // border-bottom: 5px solid red transparent;
     border-bottom: 3px solid 
         ${props => (props.current ? "#3498db" : "transparent")};
     transition: border-bottom 0.5s ease-in-out;
-    // &:not(:last-child) {
-    //     margin-right: 10px;
-    // }
 `;
 
-//const Link = styled.a``; // Link는 이렇게 안하고 react-router이용
 const SLink = styled(Link)`
     height: 50px;
-    //display: block; // 이렇게 해야 빈공간 눌러도 동작
     display: flex;
     align-items: center;
     justify-content: center;
-`; // built-in component에 경우
+`;
 
-export default withRouter(({ location: { pathname } }) => ( //due to the withRouter, can access to props
+export default withRouter(({ location: { pathname } }) => (
     <Header className="nav">
         <List>
             <Item current={pathname === URL.HOME}>
