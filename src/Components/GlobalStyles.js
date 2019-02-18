@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
         font-size: 14px;
         background-color: rgba(20, 20, 20, 1);
         color: white;
-        padding-top: 80px; // header size만큼 빼줌
+        padding-top: 50px;
     }
 `;
 
