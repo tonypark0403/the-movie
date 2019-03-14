@@ -4,10 +4,10 @@ With React and ES6 from the move api.
 
 ## Screens
 
-- [ ] Home
-- [ ] TV Shows
-- [ ] Search
-- [ ] Detail
+- [x] Home
+- [x] TV Shows
+- [x] Search
+- [x] Detail
 
 ## API Verbs
 
@@ -19,11 +19,3 @@ With React and ES6 from the move api.
 - [x] TV Show Detail
 - [x] Movie Detail
 - [x] Search (Movie, TV)
-
-## Code Challenges
-
-- [ ] IMDB Link
-- [ ] Tabs inside of Movie / Show Details (YT Videos, Production Company & Countries)
-- [ ] Collections Link
-- [ ] /collections Route
-- [ ] On TV Show, show seasons and creators
